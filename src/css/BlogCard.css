@@ -1,0 +1,38 @@
+.blog-container{
+    color:whitesmoke;
+    background-color: black;
+    margin: 20px;
+  }
+  .blog-container-item ul li{ 
+    list-style-type: none;
+  }
+  .blog-container-search{
+    margin: 20px auto 50px 65px;
+  }
+  .blog-title{
+    font-weight: bolder;
+    font-size: 20px;
+    outline: 1px dotted whitesmoke;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .author-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 12px;
+  }
+  .author{
+    margin: 5px 0px 5px 10px;
+    font-weight: bolder
+  }
+  .place{
+    margin: 5px 10px 5px 0px;
+    font-weight: bolder;
+  }
+  .description{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    margin: 0px 10px 10px 10px;
+  }
