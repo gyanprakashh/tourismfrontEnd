@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -33,7 +34,7 @@ export default function Footer() {
           className="col-md-6 "
           style={{ color: "white", fontWeight: "500" }}
         >
-          <div className="col ">Privacy Policy | Terms and Conditions | About Travel Point</div>
+         <NavLink to ="/about" style={{textDecoration:"none" , color:"#ffff"}}> <div className="col " >Privacy Policy | Terms and Conditions | About Travel Point</div></NavLink>
           <span className="col">  </span>
           <span className="col"> </span>
         </div>

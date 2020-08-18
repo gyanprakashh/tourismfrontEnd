@@ -51,6 +51,7 @@ export default function SignIn({ history }) {
             emailError:""
           });
         });
+        window.location.reload(false);
         isAuth() ? history.push("/") : history.push("/signin");
       })
       .catch((err) => {

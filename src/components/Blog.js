@@ -1,7 +1,8 @@
 import React,{useState,useEffect,useCallback} from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from "react-toastify";
-import BlogCard from './BlogCard'
+import BlogCard from './BlogCard';
+import {NavLink} from 'react-router-dom'
 
 export default function Blog() {
     const [blog,setBlog]=useState([]);
@@ -48,8 +49,11 @@ export default function Blog() {
     return (
         <div className="blog-container-item">
             <div className="blog-container-search">
-             <input type="text" onChange={handleChange}  value={searchItem}  placeholder="Enter place name" />
-             <button onClick={handleSearch}>Search..</button>
+             <input  type="text" onChange={handleChange}  value={searchItem}  placeholder="Enter place name" />
+             <button style={{padding:"1%",marginRight:"30%"}} onClick={handleSearch}>Search..</button>
+             <span className="write-blog">
+                 <NavLink to='/create-blogs'>Share Your Experience </NavLink>
+             </span>
             </div>
             <ToastContainer />
             <ul>

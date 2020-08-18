@@ -8,7 +8,7 @@ export default function App() {
   const object = obj();
   return (
     <div className="flora-container">
-      <div className="flora-faunna">
+      <div className="flora-faunna" style={{marginBottom:"70px"}}>
         <h2 style={{ color: "white", paddingTop: "40px" }}>Mountains</h2>
         <img
           className="flora-main-img"

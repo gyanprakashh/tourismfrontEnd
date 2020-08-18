@@ -3,7 +3,7 @@ import "./App.css";
 import Routes from "./routes/Routes";
 import axios from "axios";
 import { getCookie, signout } from "./utils/helpers";
-axios.defaults.baseURL = "http://localhost:8000/api";
+axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL;
 axios.interceptors.request.use((config) => {
   const token = getCookie("token");
   config.headers.Authorization = token;

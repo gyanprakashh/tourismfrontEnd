@@ -68,3 +68,36 @@
   .signin-to-sigup a{
    color: rgb(92, 92, 158);;
   }
+  @media screen and (max-width:650px){
+    .sign-up-container{
+      margin: 0%;
+      padding: 0%;
+      overflow-x: none;
+    }
+    .sign-up-form{
+      margin:0%;
+      padding: 0%;
+      border: none;
+      
+    }
+    .sign-up-form label{
+      display: inline-block;
+      margin-left:0% !important;
+      margin-right: 0% !important;
+      margin-bottom: 0% !important;
+      padding-left:0% !important ;
+    }
+    .sign-up-button button{
+      margin-left: 10% !important;
+    }
+    .sign-up-form input{
+      display: inline-block;
+      margin: 0% !important;
+      padding:0% !important ;
+      width: 45% !important;
+    }
+    .signin-to-sigup{
+      margin-left: 3% !important;
+    }
+
+  }

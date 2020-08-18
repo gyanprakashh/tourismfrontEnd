@@ -7,6 +7,13 @@
   .login-image{
     margin-top: 60px;
   }
+  @media screen and (max-width:650px){
+    .login-image{
+      display: none !important;
+      margin: 0% !important;
+    }
+   
+  }
   .sign-in-form{
     border: 2px solid gray;
     height: 530px;
@@ -14,6 +21,40 @@
     margin:20px;
     padding: 50px;
     margin-left: 110px;
+  }
+  @media screen and (max-width:650px){
+    .sign-in-form{
+      margin:0% !important;
+      height: 500px;
+      width: 500px;
+      padding: 0% !important;
+     border: none;
+    }
+    .sign-in-email label{
+     display: inline-block;
+     margin-left: 0% !important;
+     margin-right: 0% !important;
+     padding-left: 0% !important;
+    }
+    .sign-in-email input{
+      display: inline-block;
+        margin-right: 0% !important;
+        padding-left: 0% !important;
+    }
+    .sign-in-password input{
+      display: inline-block;
+      margin-left: 0% !important;
+    }
+    .sign-in-password label{
+      display: inline-block;
+      margin-right: 0% !important;
+      margin-left: 1% !important;
+      padding-left: 0% !important;
+    }
+    .sign-in-button button{
+      display: inline-block;
+      margin-left: 0% !important;
+    }
   }
   .sign-in-form h1{
     font-weight: 900;

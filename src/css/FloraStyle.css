@@ -10,11 +10,23 @@
       rgba(68, 70, 77, 1) 64%
     );
   }
-  
+  @media screen and (max-width: 650px) {
+     .flora-faunna{
+       height: 300px;
+       margin-bottom: 70px;
+     }
+  }
   .flora-faunna img {
     height: 450px;
     width: 500px;
     border-radius: 20px;
     object-fit: contain;
   }
-  
+  @media screen and (max-width: 650px) {
+    .flora-faunna img {
+      height: 350px;
+      width: 350px;
+      border-radius: 20px;
+      
+    }
+  }

@@ -11,6 +11,7 @@ export default function NavBar() {
      // console.log(JSON.parse(user));
       const getname=JSON.parse(user).name;
       setName(getname);
+     // window.location.reload(false);
     }
   },[name])
   return (
@@ -19,7 +20,7 @@ export default function NavBar() {
         <Link className="navbar-brand" to="/">
           <img
             className="brand-logo"
-            src="/images/brand.jpg"
+            src="/images/tlogo.png"
             alt="brand logo"
           />
           <span
@@ -57,9 +58,9 @@ export default function NavBar() {
             <Link className="nav-link" to="/blogs">
               Blogs
             </Link>
-            <Link className="nav-link" to="/create-blogs">
+            {/* <Link className="nav-link" to="/create-blogs">
               Write Blog
-            </Link>
+            </Link> */}
             {isAuth() ? (
               <Link className="nav-link" to="/signin">
                 {name}
@@ -79,35 +80,7 @@ export default function NavBar() {
         </div>
       </nav>
 
-      {/* <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand>
-          <NavLink to="/">
-            {" "}
-            <img
-              className="brand-logo"
-              src={"./images/brand.jpg"}
-              alt="brand-logo-uttrakhand"
-            ></img>{" "}
-          </NavLink>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link href="/contact">Contact</Nav.Link>
-            <Nav.Link href="/blogs">Read Blogs</Nav.Link>
-            <Nav.Link href="/create-blogs">Write Blog</Nav.Link>
-            <Nav.Link>
-              <NavLink to="/signup">Signup </NavLink>
-            </Nav.Link>
-            <Nav.Link>
-              <NavLink to="/signin">Signin </NavLink>{" "}
-            </Nav.Link>
-            <Nav.Link>
-              <NavLink to="/signout">Signout </NavLink>{" "}
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar> */}
+     
     </>
   );
 }
