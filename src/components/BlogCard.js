@@ -7,11 +7,11 @@ export default function BlogCard(props) {
     <div className="blog-container">
       <div className="blog-title">{title}</div>
       <div className="author-container">
-        <div className="author">Author: {author}</div>
         <div className="place">Place: {place}</div>
+        <div className="author">Author: {author}</div>
       </div>
       <div className="hide-show">
-        <div className="description">{description}</div>
+        <div className="description tex-center">{description}</div>
       </div>
     </div>
   );

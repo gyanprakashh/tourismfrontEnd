@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
+import "bootstrap/dist/js/bootstrap.bundle"
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';

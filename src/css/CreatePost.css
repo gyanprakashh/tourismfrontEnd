@@ -19,6 +19,7 @@
 .create-post-title input {
     width: 85%;
     margin-left: 15px;
+    margin-bottom: 1%;
 }
 
 .create-post-author label {
@@ -31,6 +32,7 @@
 .create-post-author input {
     width: 85%;
     margin-left: 15px;
+    margin-bottom: 1%;
 }
 
 .create-post-place label {
@@ -42,6 +44,7 @@
 .create-post-place input{
     width: 85%;
     margin-left: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .create-post-description label {
@@ -60,4 +63,13 @@
     padding: 8px 20px 8px 20px;
     border-radius: 10%;
     font-weight: 700;
+}
+@media screen and (max-width:650px){
+    .create-post-description textarea{
+        margin-left: 13px;
+        width: 85%;
+    }
+    .create-post-form button{
+        margin-left: 30%;
+    }
 }

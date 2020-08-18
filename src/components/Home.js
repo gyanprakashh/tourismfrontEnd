@@ -29,6 +29,7 @@ export class Home extends Component {
             <br/>
             <BorderComp />
             <SecondBanner />
+            <BorderComp />
             <Footer />
             </>
 
